@@ -13,6 +13,15 @@
         </ul>
       </li>
       <li>
+        <i>Sherclock</i>
+        <ul style="list-style-type:square">
+          <li>This is a video game made with Unity 2D and C#.</li>
+          <li>It is meant to teach the benefits of using a password manager.</li>
+          <li>I worked with Carnegie Mellon University CyLab and Giada Sun on this project.</li>
+          <li>Available for <a href = "Sherclock.zip">Windows</a></li>
+        </ul>
+      </li>
+      <li>
         <i>Adventures at CMU</i>
         <ul style="list-style-type:square">
           <li>This is a short video game I created with Unity 2D</li>
