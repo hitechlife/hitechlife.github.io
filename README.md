@@ -1,3 +1,3 @@
-# Portfolio of My Previous Works
+# Kalpa's Portfolio
 
-This repository is a website version of my portfolio. The theme is provided by Github.
+This website contains games I've worked on in the past. The theme is provided by Github.

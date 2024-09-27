@@ -1,75 +1,20 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=640">
+{% include header.html %}
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
-    <link rel="stylesheet" href="{{ '/assets/css/mobile.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="{{ '/assets/css/non-screen.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)">
 
-    <script src="{{ '/assets/js/modernizr.js' | relative_url }}"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
-    <script>
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
 
-{% seo %}
-  </head>
 
-  <body>
-    <div class="shell">
-      {% include header.html %}
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Kalpa's Portfolio</h1>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      
-        <div id="no-downloads">
-          <span class="inner">
-          </span>
-        </div>
+    
       
 
 
-      <span class="banner-fix"></span>
 
 
       <section id="main_content">
-        <h1 id="portfolio-title">Kalpa's Portfolio</h1>
-
-<p>This repository is a website version of my portfolio. The theme is provided by Github.</p>
+        <h1 id="portfolio-title">Game Portfolio</h1>
+        {{ content }}
 
       </section>
-      {% include footer.html %}
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Thank you for viewing.</p>
-            
-              <p>This project by <a href="http://github.com/hitechlife">hitechlife</a> can be found on <a href="http://github.com/hitechlife/hitechlife.github.io">GitHub</a></p>
-            
-            
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <!--<span class="octocat"></span>-->
-      </footer>
 
-    </div>
 
     
-  </body>
-</html>
+  {% include footer.html %}

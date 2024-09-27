@@ -34,23 +34,34 @@ a#forkme_banner { position: absolute; top: 0; left: 0; width: 138px; height: 138
 a#forkme_banner:hover { background-position: 0 -138px; }
 
 /* header */
-header { position: relative; z-index: 2; margin: 0 auto; max-width: 600px; top: 38px; }
+header { 
+    position: relative; 
+    z-index: 2; 
+    /* max-width: 600px;  */
+    margin-top: 38px;
+    margin-left: 31px;
+    margin-right: 31px;
+    /* margin-bottom: 150px; */
+    padding: 20px;
+}
+
+header a { color: #fff; }
 
 header span.ribbon-inner { position: relative; display: block; background-color: #cd596b; border: 4px solid #7c334f; padding: 2px; z-index: 1; }
 
 header span.left-tail, header span.right-tail { position: relative; display: block; width: 56px; height: 105px; background: transparent url(../images/ribbon-tail-sprite.png) 0 0 no-repeat; position: absolute; bottom: -37px; z-index: 0; }
 
-header span.left-tail { background-position: 0 0; left: -31px; }
+header span.left-tail { background-position: 0 0; left: -11px; }
 
-header span.right-tail { background-position: -56px 0; right: -31px; }
+header span.right-tail { background-position: -56px 0; right: -11px; }
 
-header h1 { background-color: #7c334f; font-size: 2.5em; font-weight: 800; font-style: normal; text-transform: uppercase; color: #ece4d8; text-align: center; line-height: 1; padding: 14px 20px 0; }
+header h1 { background-color: #7c334f; font-size: 2.5em; font-weight: 800; font-style: normal; text-transform: uppercase; color: #ece4d8; text-align: center; line-height: 1; padding: 14px 20px 5px; }
 
 header h2 { background-color: #7c334f; font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif; color: #e69b95; padding-bottom: 14px; margin-top: -3px; text-align: center; }
 
-section#downloads, div#no-downloads { position: relative; display: block; height: 197px; width: 550px; padding-bottom: 150px; margin: -80px auto -150px; z-index: 1; background: transparent url(../images/bg-ramp.jpg) center 171px no-repeat; }
+section#downloads, div#no-downloads { position: relative; display: block; height: 197px; width: 100%; margin: -80px auto -150px; overflow: hidden; }
 
-div#no-downloads span.inner { display: block; position: relative; height: 197px; width: 550px; background: transparent url(../images/download-sprite.png) 0 0 no-repeat; }
+div#no-downloads span.inner { display: block; position: absolute; height: 197px; width: 100%; background: transparent url(../images/download-sprite.png) 0 0 no-repeat; background-size: 94% 197px; left: 3%; margin-top: -78px;  }
 
 section#downloads a { display: block; position: relative; height: 67px; width: 275px; padding-top: 130px; background: transparent url(../images/download-sprite.png) 0 0 no-repeat; text-align: center; line-height: 1; color: #fff; font-family: 'Open Sans', Myriad, Calibri, sans-serif; font-weight: 800; font-size: 1.3em; }
 
@@ -66,12 +77,12 @@ section#downloads a.zip:hover { background-position: 0 -197px; }
 
 section#downloads a.tgz:hover { background-position: -275px -197px; }
 
-span.banner-fix { background: transparent url(../images/download-fallback-bg.png) center top no-repeat; display: block; height: 19px; position: absolute; width: 670px; top: 19px; }
+span.banner-fix { background: transparent url(../images/download-fallback-bg.png) center top no-repeat; display: block; height: 19px; width: 100%; top: 0px; background-size: 94%; }
 
 section#main_content { z-index: 2; padding: 20px 82px 0; min-height: 185px; }
 
 /* footer */
-footer { background: transparent url(../images/footer-ramp.jpg) center -1px no-repeat; padding-top: 104px; margin: -94px auto 40px; max-width: 560px; text-align: center; }
+footer { padding-top: 104px; margin: -94px 18px 40px 18px; text-align: center; }
 
 footer span.ribbon-outer { display: block; position: relative; border-bottom: 2px solid #bdb6ad; }
 
@@ -83,7 +94,7 @@ footer a { color: #cd596b; }
 
 footer span.ribbon-inner p { background-color: #7c334f; margin: 0; color: #e69b95; font: bold italic 12px/1 Georgia, Times, “Times New Roman”, serif; padding-bottom: 4px; }
 
-footer span.ribbon-inner a { position: relative; bottom: -1px; color: #7eb0d2; font-family: 'Open Sans', Myriad, Calibri, sans-serif; text-transform: uppercase; font-style: normal; font-weight: 800; font-size: 1.2em; }
+footer span.ribbon-inner a { position: relative; bottom: -1px; color: #7eb0d2; font-family: 'Open Sans', Myriad, Calibri, sans-serif;  font-weight: 800; }
 
 footer span.ribbon-inner a:hover { color: #7eb0d2; }
 
@@ -93,7 +104,7 @@ footer span.left-tail { background-position: 0 0; left: -11px; }
 
 footer span.right-tail { background-position: -18px 0; right: -11px; }
 
-footer span.octocat { background: transparent url(../images/octocat.png) 0 0 no-repeat; display: block; width: 30px; height: 30px; margin: 0 auto; }
+footer span.octocat { background: transparent url(../images/octocat.png) 0 0 no-repeat; display: block; width: 30px; height: 30px; margin: 10px auto 0px; }
 
 /* content */
 body { background: #ece4d8; font: normal normal 15px/1.5 Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif; color: #544943; -webkit-font-smoothing: antialiased; }
@@ -216,3 +227,11 @@ dd p:first-child { margin-top: 0; }
 .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx { color: #859900; }
 
 .highlight .ss { color: #859900; }
+
+.header-nav  {
+    display: inline;
+}
+.header-nav li {
+    margin-left: 20px;
+    display: inline;
+}
