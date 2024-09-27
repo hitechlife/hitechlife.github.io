@@ -237,16 +237,18 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     unicode-display_width (1.4.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   github-pages
-  jekyll (~> 3.7.4)
-  jekyll-feed (~> 0.6)
-  minima (~> 2.0)
+  jekyll
+  jekyll-feed
+  minima
   tzinfo-data
+  webrick (~> 1.8)
 
 BUNDLED WITH
-   1.17.1
+   1.17.3

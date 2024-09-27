@@ -1,0 +1,29 @@
+.thumbnail-grid ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.thumbnail-grid li {
+    width: 21%;
+    /* margin-right: 1.33%; */
+}
+
+.thumbnail-grid li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.thumbnail-grid .description {
+    position: relative;
+    padding-right: 25%;
+ }
+
+image {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
