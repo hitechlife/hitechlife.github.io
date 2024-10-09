@@ -1,14 +1,17 @@
-
 {% include header.html %}
-
-
-
-
-
-      <section id="main_content">
-        This is info about each item.
-        {{ content }}
-      </section>
-
+  <section id="main_content" class="portfolio-item">
+    <h1 id="title">{{page.title}}</h1>
+    <div class="portfolio-item-thumb"><img src="{{page.imgSource}}"/></div>
+    <h2 id="Description">Description</h2>
+    <p>{{page.description}}</p>
+    <h2 id="Summary">Summary</h2>
+    <p>{{page.summary}}</p>
+    <h2 id="Team">Team</h2>
+    <p>{{page.team}}</p>
+    <h2 id="Involvement">Involvement</h2>
+    <p>{{page.involvement}}</p>
+    <h2 id="Links">Relevant Links</h2>
+    <p>{{page.links}}</p>
+    {{ content }}
+  </section>
 {% include footer.html %}
-
