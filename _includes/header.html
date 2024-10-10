@@ -1,17 +1,47 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640">
+
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/style.css"/>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/css/home.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
+    
+    <!-- Temporarily disabling other layouts -->
+    <!-- <link rel="stylesheet" href="{{ '/assets/css/mobile.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)"> -->
+    <!-- <link rel="stylesheet" href="{{ '/assets/css/non-screen.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)"> -->
+
+    <script src="{{ '/assets/js/modernizr.js' | relative_url }}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
+    <script>
+        $(document).ready(function () {
+        $('#main_content').headsmart()
+        })
+    </script>
+
+{% seo %}
 </head>
 <body>
 <header>
-<nav>
-<!--<ul>
-    <li><a href="{{site.baseurl}}/publications.html">Publications</a></li>
-    <li><a href="{{site.baseurl}}/software.html">Software</a></li>
-    <li><a href="{{site.baseurl}}/stuff.html">Stuff</a></li>
-</ul> -->
+    <!-- <span class="banner-fix"></span> -->
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Kalpa's Portfolio</h1>
+            <nav>
+<ul class="header-nav">
+    <li><a href="{{site.baseurl}}/Portfolio">Portfolio</a></li>
+    <li><a href="{{site.baseurl}}/about">About</a></li>
+</ul>
 </nav>
-<h1><a href="{{site.baseurl}}/">hitechlife</a></h1>
+</span>
+<span class="left-tail"></span>
+<span class="right-tail"></span>
+</span>
+<!-- <div id="no-downloads"><span class="inner">
+</span> -->
 </header>
+</div>

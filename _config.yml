@@ -13,19 +13,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Portfolio of my previous works
+title: Kalpa's Portfolio
 description: >- # this means to ignore newlines until "baseurl:"
                      
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hitechlife.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kambrdo
 github_username:  hitechlife
 
 # Build settings
+include:
+  - assets
+  - _includes
+  - _layouts
+livereload_ignore: []
+livereload: true
+verbose: true
 markdown: kramdown
 theme: jekyll-theme-merlot
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
